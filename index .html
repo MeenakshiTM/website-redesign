@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Weather App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #eaf6ff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    header input {
+      width: 80%;
+      padding: 12px 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .current-weather {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .current-weather h1 {
+      font-size: 4rem;
+      color: #0077b6;
+    }
+
+    .hourly, .daily {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .hour-card, .day-card {
+      background: #f0f8ff;
+      padding: 10px;
+      border-radius: 12px;
+      width: 80px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 119, 182, 0.1);
+    }
+
+    .radar {
+      background: #d0ebff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #005f73;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <input type="text" placeholder="🔍 Search city..." />
+    </header>
+
+    <section class="current-weather">
+      <h1>32°C</h1>
+      <p>Sunny</p>
+    </section>
+
+    <section class="hourly">
+      <div class="hour-card">2 PM<br>☀️<br>33°C</div>
+      <div class="hour-card">3 PM<br>☀️<br>34°C</div>
+      <div class="hour-card">4 PM<br>☀️<br>35°C</div>
+    </section>
+
+    <section class="daily">
+      <div class="day-card">Fri<br>☁️<br>30°C</div>
+      <div class="day-card">Sat<br>🌧️<br>28°C</div>
+      <div class="day-card">Sun<br>☀️<br>32°C</div>
+    </section>
+
+    <section class="radar">
+      <p>🛰️ Radar Map Preview</p>
+    </section>
+  </div>
+</body>
+</html>
